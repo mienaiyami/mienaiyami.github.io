@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Lexend;
+    src: url("Lexend Deca Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: BigS;
+    src: url("Big Shoulders Display.ttf");
+    font-weight: 700;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lexend, BigS;
+    color: var(--color);
+    font-size: 15px;
+}
+:root {
+    --Sedans1: #e28525;
+    --Sedans2: #e28525;
+    --SUVs1: #016972;
+    --SUVs2: #016972;
+    --Luxury1: #00403f;
+    --Luxury2: #00403f;
+
+    --color: #ffffff;
+    --colorTrans: #ffffff9c;
+}
+.cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 300px;
+        height: 500px;
+        border-radius: 5px;
+        padding: 40px;
+        box-sizing: border-box;
+        h1 {
+            margin: 20px 0;
+            font-size: 40px;
+        }
+        p {
+            color: var(--colorTrans);
+            line-height: 25px;
+        }
+        a {
+            padding: 15px 40px;
+            border: 1px solid #fff;
+            border-radius: 100px;
+            color: #fff;
+            position: relative;
+            top: 140px;
+            text-decoration: none;
+            background-color: transparent;
+            user-select: none;
+            &:hover {
+                background-color: #ffffff;
+            }
+        }
+    }
+    .Sedans {
+        background-color: var(--Sedans1);
+        a {
+            &:hover {
+                color: var(--Sedans1);
+            }
+        }
+    }
+    .SUVs {
+        background-color: var(--SUVs1);
+        a {
+            &:hover {
+                color: var(--SUVs1);
+            }
+        }
+    }
+    .Luxury {
+        background-color: var(--Luxury1);
+        a {
+            &:hover {
+                color: var(--Luxury1);
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .cont {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+    }
+}
