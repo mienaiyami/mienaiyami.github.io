@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./index.css" />
+        <title>Frontend Mentor | Interactive pricing component</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Simple, traffic-based pricing</h1>
+            <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+        </header>
+        <section class="main">
+            <div class="top">
+                <div class="views">100K PAGEVIEWS</div>
+                <div class="pricepm">
+                    <span class="price-span">$0</span>
+                    <span>/month</span>
+                </div>
+                <div class="price-slider-cont">
+                    <div class="percentbar p-total"></div>
+                    <div class="percentbar p-current"></div>
+                    <input
+                        class="price-slider"
+                        id="price-slider"
+                        type="range"
+                        name="price-range"
+                        min="0.0"
+                        max="30.0"
+                        value="16.0"
+                        step="0.01"
+                    />
+                </div>
+                <div class="toggle-year-month">
+                    <label for="toggleym">
+                        <input type="checkbox" name="toggleym" id="toggleym" />
+                        Monthly Billing
+                        <span class="toggleCheckbox"></span>
+                        Yearly Billing
+                    </label>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bstext">
+                    <ul>
+                        <li>Unlimited websites</li>
+                        <li>100% data ownership</li>
+                        <li>Email reports</li>
+                    </ul>
+                </div>
+                <div class="starttrialbtn-cont">
+                    <button class="starttrialbtn">Start my trial</button>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="./index.js"></script>
+</html>
