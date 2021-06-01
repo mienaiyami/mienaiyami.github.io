@@ -1,5 +1,6 @@
 const slider = document.querySelector("#price-slider");
 const checkMorY = document.querySelector("#toggleym");
+const views = document.querySelector("#views");
 $(".pricepm .price-span").html(`$${slider.value}.0`);
 
 $(".p-total").css(
@@ -16,9 +17,9 @@ $(".p-current").css({
         slider.offsetLeft +
         parseFloat($(".price-slider").css("--slider-width")) / 2,
 });
-slider.oninput = () => {
+slider.oninput = () => onchangeorinnput();
+function onchangeorinnput() {
     $(".pricepm .price-span").html(`$${slider.value}`);
-    console.log(slider.value);
     $(".p-current").css({
         width:
             (slider.value / slider.max) *
@@ -28,7 +29,7 @@ slider.oninput = () => {
             slider.offsetLeft +
             parseFloat($(".price-slider").css("--slider-width")) / 2,
     });
-};
+}
 checkMorY.onchange = () => {
     if (checkMorY.checked) {
         slider.value *= 12;
@@ -47,5 +48,6 @@ checkMorY.onchange = () => {
             `<span class="price-span">$0</span><span>/month</span>`
         );
     }
+    onchangeorinnput();
 };
 console.log(slider.value);
