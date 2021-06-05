@@ -18,21 +18,23 @@ function putTime(time, fixedTime) {
     timeDiff = new Date(fixedTime.getTime() - time.getTime());
     let days, hours, minutes, seconds;
     days =
-        timeDiff.getDate() > 10 ? timeDiff.getDate() : "0" + timeDiff.getDate();
+        timeDiff.getDate() >= 10
+            ? timeDiff.getDate()
+            : "0" + timeDiff.getDate();
     dayDisp.html(days);
     hourDisp.html(timeDiff.getHours());
     hours =
-        timeDiff.getHours() > 10
+        timeDiff.getHours() >= 10
             ? timeDiff.getHours()
             : "0" + timeDiff.getHours();
     hourDisp.html(hours);
     minutes =
-        timeDiff.getMinutes() > 10
+        timeDiff.getMinutes() >= 10
             ? timeDiff.getMinutes()
             : "0" + timeDiff.getMinutes();
     minuteDisp.html(minutes);
     seconds =
-        timeDiff.getSeconds() > 10
+        timeDiff.getSeconds() >= 10
             ? timeDiff.getSeconds()
             : "0" + timeDiff.getSeconds();
     secondDisp.html(seconds);
