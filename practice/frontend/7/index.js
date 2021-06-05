@@ -1,7 +1,5 @@
 time = new Date();
 const fixedTime = new Date(time.getTime() + 100000000);
-console.log(fixedTime.getDate() - time.getDate());
-console.log(time, fixedTime);
 const dayDisp = $(".clock .days-cont .day-cont div");
 const hourDisp = $(".clock .hours-cont .hour-cont div");
 const minuteDisp = $(".clock .minutes-cont .minute-cont div");
@@ -74,7 +72,6 @@ class Particles {
         if (this.y <= 0) {
             particles.splice(i, 1);
             pushParticles();
-            console.log("lol");
         }
     }
 }
