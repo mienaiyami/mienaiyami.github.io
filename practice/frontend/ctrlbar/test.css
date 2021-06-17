@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+body .ctrl-bar {
+  position: absolute;
+  color: #ffffff;
+  border-radius: 100px;
+  right: 100px;
+  top: 40px;
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+}
+
+body .ctrl-bar:hover {
+  height: 200px;
+}
+
+body .ctrl-bar .ctrl-menu-item {
+  position: relative;
+  top: 0;
+  background-color: #383838;
+  color: #ffffff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+body .ctrl-bar .ctrl-menu-item:hover {
+  background: #797979;
+}
+
+body .ctrl-bar .ctrl-menu-item i {
+  font-size: 15px;
+}
+
+body .ctrl-bar .ctrl-menu-extender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+body .ctrl-bar .ctrl-menu-extender .bar {
+  position: relative;
+  width: 70%;
+  margin: 2px 0;
+  height: 3px;
+  left: 0;
+  background: #fff;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+body .ctrl-bar .ctrl-menu-extender-open .bar:nth-child(1) {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 15%;
+}
+
+body .ctrl-bar .ctrl-menu-extender-open .bar:nth-child(2) {
+  width: 0;
+}
+
+body .ctrl-bar .ctrl-menu-extender-open .bar:nth-child(3) {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 15%;
+}
+
+body .ctrl-bar .ctrl-menu {
+  display: none;
+}
+/*# sourceMappingURL=test.css.map */

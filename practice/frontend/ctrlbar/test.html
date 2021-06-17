@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./test.css" />
+        <link rel="stylesheet" href="./fontawsome/css/all.css" />
+        <script src="./anime.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script defer src="./test.js"></script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="10"
+                        result="blur"
+                    />
+                    <feColorMatrix
+                        in="blur"
+                        type="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"
+                    />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="ctrl-bar">
+            <button
+                class="ctrl-menu-item ctrl-menu-extender"
+                id="ctrl-menu-extender"
+            >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <div class="ctrl-menu">
+                <button class="ctrl-menu-item" id="ctrl-menu-fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="ctrl-menu-item" id="ctrl-menu-plus">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button class="ctrl-menu-item" id="ctrl-menu-minus">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button class="ctrl-menu-item" id="ctrl-menu-bookmark">
+                    <i class="far fa-bookmark"></i>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
