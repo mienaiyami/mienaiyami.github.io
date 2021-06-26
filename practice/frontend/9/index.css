@@ -1,0 +1,650 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-weight: 100;
+  src: url("./fonts/COMMISSIONER-LIGHT.TTF");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-weight: 500;
+  src: url("./fonts/COMMISSIONER-MEDIUM.TTF");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-weight: bold;
+  src: url("./fonts/COMMISSIONER-BOLD.TTF");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-weight: bolder;
+  src: url("./fonts/COMMISSIONER-EXTRABOLD.TTF");
+}
+
+::-moz-selection {
+  background: #3eb2ab;
+  color: #fff;
+}
+
+::selection {
+  background: #3eb2ab;
+  color: #fff;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-weight: 100;
+  font-family: "Commissioner", sans-serif;
+  cursor: default;
+  background: #fafafa;
+}
+
+body .btn {
+  background: #3eb2ab;
+  border: none;
+  color: #fff;
+  padding: 17px 30px;
+  border-radius: 40px;
+  font-family: "Commissioner";
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+body .btn:hover {
+  background: #177975;
+}
+
+body .nav {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000ce), color-stop(#00000000), to(#00000000)), url("./images/image-hero-desktop.jpg");
+  background-image: linear-gradient(to bottom, #000000ce, #00000000, #00000000), url("./images/image-hero-desktop.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .nav .navbar {
+  position: relative;
+  margin: 35px 120px;
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .nav .navbar .navLink {
+  margin-left: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .nav .navbar .navLink a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 13px;
+}
+
+body .main {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .block {
+  width: 40%;
+  min-width: 650px;
+  background-color: #ffffff;
+  padding: 50px 50px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #5a5a5a27;
+}
+
+body .main .block .btn {
+  margin-left: auto;
+}
+
+body .main .block h1 {
+  font-weight: bolder;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+body .main .block p {
+  color: #464646;
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+body .main .block h2 {
+  font-size: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .block h2 .headerInfo {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3eb2ab;
+  margin-left: auto;
+}
+
+body .main .block .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #5a5a5a42;
+  border-radius: 6px;
+  padding: 30px 30px;
+  margin-bottom: 20px;
+}
+
+body .main .block .item .btn-cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .block .item .btn-cont .stockLeft {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+body .main .block .item .btn-cont .stockLeft::after {
+  content: "Left";
+  position: absolute;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  font-size: 14px;
+  font-weight: 100;
+}
+
+body .main .outofstock {
+  opacity: 0.4;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .main .outofstock .btn {
+  background: #707070;
+}
+
+body .main .block1::before {
+  content: url("./images/logo-mastercraft.svg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .main .block1 p {
+  text-align: center;
+}
+
+body .main .block1 .btn-cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .block1 .btn-cont button {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+body .main .block1 .btn-cont .bookmark-false {
+  margin-left: auto;
+  padding-left: 70px;
+  background: #f4f4f4;
+  color: #707070;
+  background-image: url("./images/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
+}
+
+body .main .block2 .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+body .main .block2 .stats .divider {
+  height: 60%;
+  background: #e6e6e6;
+  width: 1.5px;
+  margin: 0 50px;
+}
+
+body .main .block2 .stats div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .main .block2 .stats div p {
+  line-height: 40px;
+}
+
+body .main .block2 .stats div p span {
+  display: block;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+body .main .block2 .timeleftbar {
+  width: 100%;
+  height: 12px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body .main .block2 .timeleftbar .length {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  background: #3eb2ab;
+}
+
+body .modelSelect-cont {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 200px 0;
+  background: #00000050;
+}
+
+body .modelSelect-cont .modelSelect {
+  position: relative;
+  left: 50%;
+  width: 40%;
+  min-width: 650px;
+  background-color: #ffffff;
+  padding: 50px 50px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #5a5a5a27;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .modelSelect-cont .modelSelect #closeBackThisProject {
+  padding: 10px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+body .modelSelect-cont .modelSelect #closeBackThisProject:hover svg path {
+  opacity: 1;
+}
+
+body .modelSelect-cont .modelSelect p {
+  color: #464646;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+body .modelSelect-cont .modelSelect h2 {
+  font-size: 25px;
+  width: 100%;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .modelSelect-cont .modelSelect input[type="radio"] {
+  display: none;
+}
+
+body .modelSelect-cont .modelSelect input[type="radio"]:checked + .pledgeItemCont {
+  border: 2px solid #177975;
+}
+
+body .modelSelect-cont .modelSelect input[type="radio"]:checked + .pledgeItemCont .selectedPledge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  height: auto;
+}
+
+body .modelSelect-cont .modelSelect input[type="radio"]:checked + .pledgeItemCont .checkbox-cont .checkbox::before {
+  display: block;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #5a5a5a42;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge {
+  padding: 20px 20px;
+  display: none;
+  height: 0;
+  border-top: 1px solid #5a5a5a42;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge input::-webkit-outer-spin-button,
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+  }
+}
+
+@keyframes slideDown {
+  0% {
+  }
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge .inputCont {
+  margin-left: auto;
+  margin-right: 10px;
+  border: 1px solid #3eb2ab;
+  padding: 17px 30px;
+  border-radius: 40px;
+  cursor: default;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge .inputCont::before {
+  content: "$";
+  font-family: "Commissioner";
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 5px;
+  color: #00000050;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge .inputCont:hover {
+  border: 1px solid #177975;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge .inputCont input {
+  font-family: "Commissioner";
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  cursor: text;
+  width: 40px;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge .inputCont input:focus, body .modelSelect-cont .modelSelect .pledgeItemCont .selectedPledge .inputCont input:active {
+  outline: none;
+  border: none;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+  border-radius: 6px;
+  padding: 30px 30px;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .checkbox-cont .checkbox {
+  display: block;
+  position: relative;
+  top: 7%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #464646;
+  border-radius: 100%;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .checkbox-cont .checkbox:hover {
+  border: 1px solid #3eb2ab;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .checkbox-cont .checkbox::before {
+  content: "";
+  position: relative;
+  border-radius: 100%;
+  display: none;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #3eb2ab;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem:hover .checkbox {
+  border: 1px solid #3eb2ab;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem:hover .pledgeItemContent h3 {
+  color: #3eb2ab;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .pledgeItemContent h3 .headerInfo {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3eb2ab;
+  margin-left: 10px;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .btn-cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .btn-cont .stockLeft {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+body .modelSelect-cont .modelSelect .pledgeItemCont .pledgeItem .btn-cont .stockLeft::after {
+  content: "Left";
+  position: absolute;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  font-size: 14px;
+  font-weight: 100;
+}
+
+body .modelSelect-cont .outofstock {
+  opacity: 0.4;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .modelSelect-cont .outofstock .btn {
+  background: #707070;
+}
+
+body .successModal {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  background: #00000050;
+}
+
+body .successModal .success {
+  position: relative;
+  left: 50%;
+  width: 30%;
+  top: 20%;
+  min-width: 340px;
+  background-color: #ffffff;
+  padding: 50px 50px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #5a5a5a27;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .successModal .success img {
+  width: 20%;
+}
+
+body .successModal .success h2 {
+  margin: 20px 0;
+}
+
+body .successModal .success p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=index.css.map */
