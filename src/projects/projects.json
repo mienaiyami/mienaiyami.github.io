@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Desktop Manga Reader with React+TS",
+        "link": "https://github.com/mienaiyami/react-ts-offline-manga-reader",
+        "cover": "./src/projects/Desktop Manga Reader with React+TS.png"
+    },
+    {
+        "title": "JS+Regex Calculator",
+        "link": "https://github.com/mienaiyami/js-calc-regex",
+        "cover": "./src/projects/JS+Regex Calculator.png"
+    },
+    {
+        "title": "React ToDo App",
+        "link": "https://github.com/mienaiyami/react-todo-app",
+        "cover": "./src/projects/React ToDo App.png"
+    },
+    {
+        "title": "Chromium Collections Extension",
+        "link": "https://github.com/mienaiyami/collections-chrome-extension",
+        "cover": "./src/projects/Chromium Collections Extension.jpg"
+    },
+    {
+        "title": "React Video Player",
+        "link": "https://github.com/mienaiyami/react-video-player",
+        "cover": "./src/projects/React Video Player.png"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    { "name": "html", "value": 90, "icon": "./src/imgs/html.png" },
+    { "name": "css", "value": 80, "icon": "./src/imgs/css.png" },
+    { "name": "js", "value": 75, "icon": "./src/imgs/js.png" },
+    { "name": "node", "value": 70, "icon": "./src/imgs/node.png" },
+    { "name": "ts", "value": 75, "icon": "./src/imgs/ts.png" },
+    { "name": "react", "value": 75, "icon": "./src/imgs/react.png" },
+    { "name": "webpack", "value": 60, "icon": "./src/imgs/webpack.png" },
+    { "name": "electron", "value": 80, "icon": "./src/imgs/electron.png" }
+]
